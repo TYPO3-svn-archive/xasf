@@ -72,7 +72,7 @@
 		 */
 		public function extraItemMarkerProcessor($markerArray, $row, $lConf, &$pObj) {
 			if ($pObj->conf['xasf.']['enableAntispamHiddenField'])
-			$markerArray['###XASFCONTROLFIELD###'] = '<input type="input" name="tx_veguestbook_pi1[xasfControlField]" value="" />';
+			$markerArray['###XASFCONTROLFIELD###'] = '<input type="hidden" name="tx_veguestbook_pi1[xasfControlField]" value="" />';
 			return $markerArray;
 		}
 
